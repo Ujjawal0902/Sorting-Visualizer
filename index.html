@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>♬ Sorting Visualizer ♬</h1>
+        <p>Select a sorting algorithm and watch the magic happen!</p>
+    </div>
+
+    <div id="container"></div>
+
+    <div class="controls">
+        <button onClick="init()">🔄 Initialize</button>
+        <button onClick="play()">▶️ Play</button>
+        <select id="algorithm" onchange="selectAlgorithm()">
+            <option value="bubble">Bubble Sort</option>
+            <option value="selection">Selection Sort</option>
+            <option value="insertion">Insertion Sort</option>
+        </select>
+    </div>
+
+    <div class="instructions">
+        <p>Click "Initialize" to create a new array and "Play" to sort it.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

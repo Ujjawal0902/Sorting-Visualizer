@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #333;
+    margin: 0;
+}
+
+p {
+    color: #555;
+    margin: 10px 0;
+}
+
+#container {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 2px solid #333;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.bar {
+    width: 20px;
+    margin: 1px;
+    background-color: #333; 
+    transition: height 0.5s, background-color 0.3s ease-in-out;
+}
+
+.controls {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+button, select {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #0a6697;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover, select:hover {
+    background-color: #1845a0;
+}
+
+select {
+    padding: 10px;
+}
+
+.instructions {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+}
+
+.bar:hover {
+    background-color: #ff7675;
+    transform: scale(1.05);
+}
+
+.bar {
+    transition: height 0.5s ease, background-color 0.3s;
+}
